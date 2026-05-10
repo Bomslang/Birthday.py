@@ -98,4 +98,4 @@ elif st.session_state.step == 3:
         st.snow()
 
 st.progress(st.session_state.step / 3)
-st.caption("Made with ❤️ by " + 🥰)
+st.caption("Made with ❤️ by " + Me)
