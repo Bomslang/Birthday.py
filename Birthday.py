@@ -6,7 +6,7 @@ st.set_page_config(page_title="Happy Birthday Princess!", page_icon="👑", layo
 
 # === Change these two lines ===
 HER_NAME = "Princess"          # ← Change to her real name or nickname
-YOUR_NAME = "Your Name"        # ← Put your name here
+YOUR_NAME = "🥰"        # ← Put your name here
 
 st.markdown("""
 <style>
@@ -31,7 +31,7 @@ st.markdown(f"""
 if 'step' not in st.session_state: st.session_state.step = 1
 if 'candles_lit' not in st.session_state: st.session_state.candles_lit = True
 
-st.title(f"🎉 Happy Birthday, {HER_NAME}! 👑")
+st.title(f"🎉 Happy Birthday, {Princess}! 👑")
 
 if st.session_state.step == 1:
     st.markdown(f'<h1 class="princess-title">Happy Birthday, {HER_NAME}!</h1>', unsafe_allow_html=True)
@@ -56,9 +56,9 @@ elif st.session_state.step == 2:
     with col2:
         if st.button("💖 Cuddle Princess Sparkle", use_container_width=True):
             st.success(random.choice([
-                f"🐱 *Purrrr* {HER_NAME}, she loves you so much!",
+                f"🐱 *Purrrr* {princess}, she loves you so much!",
                 "💕 She gives you the biggest head boop ever!",
-                "😻 Happy Birthday from your royal cat!"
+                "😻 Happy Birthday from your cat!"
             ]))
             st.balloons()
 
@@ -84,7 +84,7 @@ elif st.session_state.step == 3:
     if not st.session_state.candles_lit:
         st.markdown(f"""
         <h2 style="text-align:center; color:#831843;">
-            I love you so much, {HER_NAME} ❤️<br>
+            I love you so much, {Princess} ❤️<br>
             Happy Birthday, My Princess!
         </h2>
         """, unsafe_allow_html=True)
@@ -98,4 +98,4 @@ elif st.session_state.step == 3:
         st.snow()
 
 st.progress(st.session_state.step / 3)
-st.caption("Made with ❤️ by " + YOUR_NAME)
+st.caption("Made with ❤️ by " + 🥰)
